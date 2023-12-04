@@ -48,9 +48,6 @@ namespace BFS
         }
 
 
-
-
-
     }
     public class Wezel2
     {
@@ -61,5 +58,27 @@ namespace BFS
         {
             this.wartosc = liczba;
         }
+
+        public void Add(Wezel2 w)
+        {
+            this.sasiedzi.Add(w);
+            w.sasiedzi.Add(this);
+        }
     }
+    public class Wezel3
+    {
+        public int wartosc;
+        public Wezel3 rodzic;
+        public Wezel3 leweDziecko;
+        public Wezel3 praweDziecko;
+
+
+        public Wezel3(int liczba)
+        {
+            this.wartosc = liczba;
+        }
+
+    }
+
+
 }
