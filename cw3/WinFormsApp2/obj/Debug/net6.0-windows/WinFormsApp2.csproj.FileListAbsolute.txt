@@ -1,0 +1,7 @@
+D:\169362\AISD169362_9-45\cw3\WinFormsApp2\obj\Debug\net6.0-windows\WinFormsApp2.csproj.AssemblyReference.cache
+D:\169362\AISD169362_9-45\cw3\WinFormsApp2\obj\Debug\net6.0-windows\WinFormsApp1.Form1.resources
+D:\169362\AISD169362_9-45\cw3\WinFormsApp2\obj\Debug\net6.0-windows\WinFormsApp2.csproj.GenerateResource.cache
+D:\169362\AISD169362_9-45\cw3\WinFormsApp2\obj\Debug\net6.0-windows\WinFormsApp2.GeneratedMSBuildEditorConfig.editorconfig
+D:\169362\AISD169362_9-45\cw3\WinFormsApp2\obj\Debug\net6.0-windows\WinFormsApp2.AssemblyInfoInputs.cache
+D:\169362\AISD169362_9-45\cw3\WinFormsApp2\obj\Debug\net6.0-windows\WinFormsApp2.AssemblyInfo.cs
+D:\169362\AISD169362_9-45\cw3\WinFormsApp2\obj\Debug\net6.0-windows\WinFormsApp2.csproj.CoreCompileInputs.cache

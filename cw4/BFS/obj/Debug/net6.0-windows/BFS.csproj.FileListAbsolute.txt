@@ -1,0 +1,17 @@
+D:\169362\AISD169362_9-45\cw4\BFS\bin\Debug\net6.0-windows\BFS.exe
+D:\169362\AISD169362_9-45\cw4\BFS\bin\Debug\net6.0-windows\BFS.deps.json
+D:\169362\AISD169362_9-45\cw4\BFS\bin\Debug\net6.0-windows\BFS.runtimeconfig.json
+D:\169362\AISD169362_9-45\cw4\BFS\bin\Debug\net6.0-windows\BFS.dll
+D:\169362\AISD169362_9-45\cw4\BFS\bin\Debug\net6.0-windows\BFS.pdb
+D:\169362\AISD169362_9-45\cw4\BFS\obj\Debug\net6.0-windows\BFS.csproj.AssemblyReference.cache
+D:\169362\AISD169362_9-45\cw4\BFS\obj\Debug\net6.0-windows\BFS.Form1.resources
+D:\169362\AISD169362_9-45\cw4\BFS\obj\Debug\net6.0-windows\BFS.csproj.GenerateResource.cache
+D:\169362\AISD169362_9-45\cw4\BFS\obj\Debug\net6.0-windows\BFS.GeneratedMSBuildEditorConfig.editorconfig
+D:\169362\AISD169362_9-45\cw4\BFS\obj\Debug\net6.0-windows\BFS.AssemblyInfoInputs.cache
+D:\169362\AISD169362_9-45\cw4\BFS\obj\Debug\net6.0-windows\BFS.AssemblyInfo.cs
+D:\169362\AISD169362_9-45\cw4\BFS\obj\Debug\net6.0-windows\BFS.csproj.CoreCompileInputs.cache
+D:\169362\AISD169362_9-45\cw4\BFS\obj\Debug\net6.0-windows\BFS.dll
+D:\169362\AISD169362_9-45\cw4\BFS\obj\Debug\net6.0-windows\refint\BFS.dll
+D:\169362\AISD169362_9-45\cw4\BFS\obj\Debug\net6.0-windows\BFS.pdb
+D:\169362\AISD169362_9-45\cw4\BFS\obj\Debug\net6.0-windows\BFS.genruntimeconfig.cache
+D:\169362\AISD169362_9-45\cw4\BFS\obj\Debug\net6.0-windows\ref\BFS.dll
