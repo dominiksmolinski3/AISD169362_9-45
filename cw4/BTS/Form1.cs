@@ -10,6 +10,9 @@ namespace BTS
         private void button1_Click(object sender, EventArgs e)
         {
 
+
+
+
         }
 
         
@@ -27,13 +30,40 @@ namespace BTS
         {
             Wezel3 rodzic = this.znajdzRodzica(liczba);
             rodzic.Add(liczba);
+            
+
 
         }
 
-        private Wezel3 znajdzRodzica(int liczba)
+        public Wezel3 znajdzRodzica(int liczba)
         {
-            throw new NotImplementedException();
+            var w = this.korzeñ;
+            while (true)
+            {
+                if (liczba < w.wartosc)
+                {
+                    if (w.leweDziecko == null)
+                    {
+                        return w;
+                    }
+                    else w = w.leweDziecko;
+                }
+
+                else
+                {
+                    if (w.praweDziecko == null) {
+                        return w;
+
+                    }
+                    else w = w.praweDziecko;
+                }
+
+            }
         }
+    
+
+
+
     }
 
 
@@ -57,10 +87,20 @@ namespace BTS
             return this.wartosc.ToString();
         }
 
-        internal void Add(int liczba)
+        public void Add(int liczba)
         {
-            throw new NotImplementedException();
+            var dziecko = new Wezel3(liczba);
+            dziecko.rodzic = this;
+            if (liczba < this.wartosc)
+            {
+                this.leweDziecko = dziecko;
+            }
+            else this.praweDziecko = dziecko;
+
+
         }
+
+
     }
 
 }
