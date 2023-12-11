@@ -60,6 +60,17 @@ namespace BTS
 
             }
         }
+
+        public Wezel3 Znajdz(int liczba)
+        {
+            var w = this.korzeñ
+            while (true)
+            {
+
+
+            }
+
+        }
     
 
 
