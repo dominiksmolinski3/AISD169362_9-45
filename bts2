@@ -1,0 +1,221 @@
+using System.Security.Cryptography.X509Certificates;
+
+namespace WinFormsApp2
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+    }
+
+    public class DrzewoBinarne
+    {
+        public Wezel3 korzeń;
+        public DrzewoBinarne(int liczba)
+        {
+            this.korzeń = new Wezel3(liczba);
+        }
+
+        public void Add(int liczba)
+        {
+            Wezel3 rodzic = this.znajdzRodzica(liczba);
+            rodzic.Add(liczba);
+
+        }
+
+
+        public Wezel3 znajdzRodzica(int liczba)
+        {
+            var w = this.korzeń;
+            return w;
+            while (true)
+            {
+                if (liczba < w.wartosc)
+                {
+                    if (w.leweDziecko == null)
+                    {
+                        return w;
+                    }
+                    else w = w.leweDziecko;
+                }
+                if (liczba > w.wartosc)
+                {
+                    if (w.praweDziecko == null)
+                    {
+                        return w;
+                    }
+                    else w = w.praweDziecko;
+                }
+            }
+
+
+
+        }
+        public Wezel3 UsuńGdy0(Wezel3 w)
+        {
+            if (w.rodzic == null)
+            {
+                this.korzeń = null; 
+                return w;
+            }
+            if (w.rodzic.leweDziecko == w)
+            {
+                w.rodzic.leweDziecko = null;
+
+            }
+            else
+                w.rodzic.praweDziecko = null;
+            w.rodzic = null;
+            return w;
+
+        }
+        public Wezel3 UsuńGdy1(Wezel3 w)
+        {
+            Wezel3 dziecko = null;
+            if (w.leweDziecko != null)
+            {
+                dziecko = w.leweDziecko;
+                w.leweDziecko = null;
+
+
+            }
+            else
+            {
+                dziecko = w.praweDziecko;
+                w.praweDziecko = null;
+            }
+            dziecko.rodzic = w.rodzic;
+            if (w.rodzic == null)
+            {
+                this.korzeń = dziecko;
+            }
+            else
+            {
+                if (w.rodzic.leweDziecko == w)
+                {
+                    w.rodzic.leweDziecko = dziecko;
+                }
+                else
+                    w.praweDziecko = dziecko;
+                w.rodzic = null;
+
+                
+            }
+            return w;
+            
+
+
+        }
+        public Wezel3 Usuń(Wezel3 w)
+        {
+            switch (w.GetLiczbaDzieci())
+            {
+                case 0;
+                    w = this.UsuńGdy0(w);
+                    break;
+                case 1;
+                    w = this.UsuńGdy1(w);
+                    break;
+                case 2;
+                    w = this.UsuńGdy2(w);
+                    break;
+            }
+            return w;
+        }
+
+       
+    }
+  
+
+
+
+
+
+
+
+
+
+
+
+  /* public Wezel3 Nastepnik (Wezel3 w)
+    {
+        if(w.praweDziecko != null)
+        {
+            return this.znajdzMin(w.praweDziecko); 
+        }
+  while(w.rodzic!=null){
+      if(w.rodzic.leweDziecko = w){
+     return w.rodzic;}
+  w=w.rodzic;
+    }
+  return null;
+  }
+
+*/
+  
+  /// poprzednik to zamiast prawe to lewo i zamiast ZnajdzMin to znajdz max;
+  
+    public class Wezel3
+    {
+        public int wartosc;
+        public Wezel3 rodzic;
+        public Wezel3 leweDziecko;
+        public Wezel3 praweDziecko;
+        public Wezel3 w;
+
+        public Wezel3(int liczba)
+        {
+            this.wartosc = liczba;
+        }
+
+        public override string ToString()
+        {
+            return this.wartosc.ToString();
+        }
+
+        public void Add(int liczba)
+        {
+            var dziecko = new Wezel3(liczba);
+            dziecko.rodzic = this;
+            if (liczba < this.wartosc)
+            {
+                this.leweDziecko = dziecko;
+            }
+            else this.praweDziecko = dziecko;
+
+        }
+
+        internal int GetLiczbaDzieci()
+        {
+            int wynik = 0;
+            if (this.leweDziecko != null)
+            {
+                wynik = wynik + 1;
+            }
+            if (this.praweDziecko != null)
+            {
+                wynik = wynik + 1;
+            }
+            return wynik;
+        }
+        
+    }
+    ///  W3 ZnajdzMin(W3 w){
+    ///  while(w.lewe ! null)
+    ///  w=w.lewe;
+    ///  return w;
+    ///  Max tak samo tylko w.prawe
+
+   
+  
+
+}
